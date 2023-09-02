@@ -1,4 +1,4 @@
-import Sosmed from "./Sosmend";
+import Sosmed from "./Sosmed";
 import facebook from "../assets/facebook.png";
 import instagram from "../assets/instagram.png";
 import linkedin from "../assets/linkedin.png";
@@ -40,9 +40,11 @@ export default function SosmedList() {
   ];
   return (
     <>
-      {sosmedList.map((e) => (
-        <Sosmed link={e.src} logo={e.logo} title={e.title} key={e.id} />
-      ))}
+      <div className="px-6">
+        {sosmedList.map((e) => (
+          <Sosmed link={e.src} logo={e.logo} title={e.title} key={e.id} />
+        ))}
+      </div>
     </>
   );
 }
