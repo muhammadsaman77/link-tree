@@ -6,7 +6,7 @@ export default function Sosmed({ logo, title, link }) {
   return (
     <>
       <div
-        className="flex bg-primary-blue py-2 pl-6 rounded-md items-center mb-3"
+        className="flex bg-primary-blue py-2 pl-6 rounded-md items-center mb-3 lg:w-1/2 mx-auto"
         onClick={handleClick}
       >
         <img width={30} src={logo} alt="" />
